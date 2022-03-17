@@ -1,36 +1,31 @@
 import React from 'react';
 
+import './nav.sass'
+
+const nav_content = [
+    {text: 'Програмы питания', link: "#"},
+    {text: 'Бизнес-ланчи', link: "#"},
+    {text: 'Gastro Shop', link: "#"},
+    {text: 'О нас', link: "#"},
+    {text: 'Блог', link: "#"},
+]
+
 function Nav() {
     return (
-        <div>
+        <React.Fragment>
             <ul className="nav">
-                <li>
-                    <a className="nav-link" href="">
-                        Програмы питания
-                    </a>
-                </li>
-                <li>
-                    <a className="nav-link" href="">
-                        Бизнес-ланчи
-                    </a>
-                </li>
-                <li>
-                    <a className="nav-link" href="">
-                        Gastro Shop
-                    </a>
-                </li>
-                <li>
-                    <a className="nav-link" href="">
-                        О нас
-                    </a>
-                </li>
-                <li>
-                    <a className="nav-link" href="">
-                        Блог
-                    </a>
-                </li>
+                {nav_content.map(item => {
+                    return (
+                      <li className={"nav-item"}>
+                          <a className="nav-link" href={item.link}>
+                              {item.text}
+                          </a>
+                      </li>
+                    )
+                })}
             </ul>
-        </div>
+        </React.Fragment>
     );
 }
+
 export default Nav;

@@ -3,10 +3,10 @@ import logo from '../../assets/images/logo.png';
 
 function Logo() {
     return (
-        <div className="logo">
-            <img className="logo-image" src={logo} alt="Gastro Chef Logo"></img>
+        <a className="logo" href="#">
+            <img className="logo-image" src={logo} alt="Gastro Chef Logo"/>
             <p className="logo-text">healthy ration</p>
-        </div>
+        </a>
     );
 }
 
