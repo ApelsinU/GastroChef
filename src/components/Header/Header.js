@@ -1,8 +1,8 @@
 import react from 'react';
 import Logo from '../Logo/Logo';
 import Nav from '../Nav/Nav';
-import PhoneNumber from '../phone_number/PhoneNumber';
-import LanguageSwitcher from '../language_switcher/LanguageSwitcher';
+import PhoneNumber from '../PhoneNumber/PhoneNumber';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 import './header.sass'
 
