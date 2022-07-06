@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function OrderCard({ card, onClickPlus, onClickMinus }) {
     const classes = [];
 
-    if (card.count != 0) {
+    if (card.count !== 0) {
         classes.push('active');
     } else if (card.count === 0) {
         classes.pop('active');

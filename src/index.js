@@ -6,6 +6,8 @@ import './scss/app.sass';
 
 import App from './App';
 
+import './i18n';
+
 ReactDOM.render(
     <React.StrictMode>
         <App />

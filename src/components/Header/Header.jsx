@@ -1,7 +1,6 @@
-import react from 'react';
 import Logo from '../Logo/Logo';
-import Nav from '../Nav/Nav';
-import PhoneNumber from '../PhoneNumber/PhoneNumber';
+import Nav from '../Nav/Nav.jsx'
+import PhoneNumber from '../PhoneNumber/PhoneNumberLink';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 import './header.sass'

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 
-import OrderWindow from './components/Order/OrderWindow';
-import Header from './components/Header/Header';
+import OrderWindow from './components/Order/OrderWindow.jsx';
+import Header from './components/Header/Header.jsx';
+import Footer from "./components/Footer/Footer";
 
 export default class App extends Component {
 
@@ -20,10 +21,10 @@ export default class App extends Component {
 
   render() {
       return (
-          <div>
+          <div className="page-wrapper">
               <Header/>
               {/*<OrderWindow></OrderWindow>*/}
-              <div className="scroll"></div>
+              <Footer/>
           </div>
       )
     }

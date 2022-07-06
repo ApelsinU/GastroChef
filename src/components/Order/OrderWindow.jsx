@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import OrderCard from './OrderCard';
-import BtnCross from '../BtnCross/BtnCross';
+import BtnCross from '../BtnCross/BtnCross.jsx';
 
 function OrderWindow() {
     const [orderCards, setOrderCards] = React.useState([
@@ -49,7 +49,7 @@ function OrderWindow() {
                 <div className="container">
                     <div className="order__inner">
                         <div className="order__header">
-                            <BtnCross></BtnCross>
+                            <BtnCross/>
                         </div>
                         <div className="order__content">
                             {orderCards.map((card) => {
@@ -58,7 +58,7 @@ function OrderWindow() {
                                         card={card}
                                         key={card.id}
                                         onClickPlus={onIncrease}
-                                        onClickMinus={onDecrease}></OrderCard>
+                                        onClickMinus={onDecrease}/>
                                 );
                             })}
                         </div>
